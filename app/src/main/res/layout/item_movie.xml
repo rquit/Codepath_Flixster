@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#272727">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#DADADA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Spiderman: No Way Home" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#DADADA"
+        tools:text="With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man." />
+
+</RelativeLayout>
